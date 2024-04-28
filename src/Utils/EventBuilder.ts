@@ -35,9 +35,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "A brand new toy just came out that all your friends are talking about.  Do you want to purchase the new toy for $15?",
+      "A brand new toy just came out that all your friends are talking about.  Do you want to purchase the new toy for $35?",
     image: "Teddy-Bear.png",
-    cost: -15,
+    cost: -35,
     active: true,
     accepted: false,
     recurring: false,
@@ -45,9 +45,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "Your friends are all going to an amusement park, but you need to buy a ticket to go.  Do you want to buy a ticket for $10 or not go?",
+      "Your friends are all going to an amusement park, but you need to buy a ticket to go.  Do you want to buy a ticket for $15 or not go?",
     image: "Ticket.png",
-    cost: -10,
+    cost: -15,
     active: true,
     accepted: false,
     recurring: false,
@@ -65,9 +65,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "The bookfair is coming to your school and they have the newest guiness book of world records you want.  Do you want to buy the book for $12 or not?",
+      "The bookfair is coming to your school and they have the newest guiness book of world records you want.  Do you want to buy the book for $20 or not?",
     image: "Book.png",
-    cost: -12,
+    cost: -20,
     active: true,
     accepted: false,
     recurring: false,
@@ -75,9 +75,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "Your neighbor is having a garage sale.  When you arrive you see that they have a video game console you have wanted for a long time and its much cheaper than its typical price.  Do you want to purchase it for $25?",
+      "Your neighbor is having a garage sale.  When you arrive you see that they have a video game console you have wanted for a long time and its much cheaper than its typical price.  Do you want to purchase it for $35?",
     image: "Video-Game.png",
-    cost: -25,
+    cost: -35,
     active: true,
     accepted: false,
     recurring: false,
@@ -135,9 +135,9 @@ var events: GameEvent[] = [
   },
 
   {
-    description: "You found some old toys do you want to sell them for $10?",
+    description: "You found some old toys do you want to sell them for $15?",
     image: "Teddy-Bear.png",
-    cost: 10,
+    cost: 15,
     active: true,
     accepted: false,
     recurring: false,
@@ -145,9 +145,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "Your neighbor would like you to mow the lawn for $25. Will you do it?",
+      "Your neighbor would like you to mow the lawn for $20. Will you do it?",
     image: "Lawn-Mower.png",
-    cost: 25,
+    cost: 20,
     active: true,
     accepted: false,
     recurring: false,
@@ -165,9 +165,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "You've done all your chores and are rewarded for your efforts for the week.",
+      "You've done all your chores and are rewarded $10 for your efforts for the week.",
     image: "Money.png",
-    cost: 25,
+    cost: 10,
     active: false,
     accepted: false,
     recurring: true,
@@ -175,9 +175,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "Your parents have asked you to babysit for them for them for $30. Will you do it?",
+      "Your parents have asked you to babysit for them for them for $20. Will you do it?",
     image: "Babysit.png",
-    cost: 30,
+    cost: 20,
     active: true,
     accepted: false,
     recurring: false,
@@ -185,9 +185,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "Your neighbors are going on vacation for the weekend and want you to look after their dog/cat for $50. Will you do it?",
+      "Your neighbors are going on vacation for the weekend and want you to look after their dog for $15. Will you do it?",
     image: "Walking-a-Dog.png",
-    cost: 50,
+    cost: 15,
     active: true,
     accepted: false,
     recurring: false,
@@ -195,9 +195,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "You have a school field trip coming up that you want to attend.  However, the cost of the field trip is $10.  Do you want to pay to go or not?",
+      "You have a school field trip coming up that you want to attend.  However, the cost of the field trip is $15.  Do you want to pay to go or not?",
     image: "School-Bus.png",
-    cost: -10,
+    cost: -15,
     active: true,
     accepted: false,
     recurring: false,
@@ -205,18 +205,18 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "You were gifted a neat toy from your grandparents.  There is also a cool acessory for the toy.  Do you want to pay $3 for the accessory?",
+      "You were gifted a neat toy from your grandparents.  There is also a cool acessory for the toy.  Do you want to pay $10 for the accessory?",
     image: "Teddy-Bear.png",
-    cost: -3,
+    cost: -10,
     active: true,
     accepted: false,
     recurring: false,
     info: financeInfo[0],
   },
   {
-    description: "Its your birthday, you were given $25!",
+    description: "Its your birthday, you were given $15!",
     image: "Gift.png",
-    cost: 25,
+    cost: 15,
     active: false,
     accepted: true,
     recurring: false,
@@ -234,9 +234,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "Your friends are going to the movies.  Do you want to go with them for $8?",
+      "Your friends are going to the movies.  Do you want to go with them for $15?",
     image: "Ticket.png",
-    cost: -8,
+    cost: -15,
     active: true,
     accepted: false,
     recurring: false,
@@ -244,9 +244,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "The local snowcone shop just got a brand new item. A triple scoop, double dipped, waffle cone that looks delicious.  Do you want to purchase it for $6?",
+      "The local snowcone shop just got a brand new item. A triple scoop, double dipped, waffle cone that looks delicious.  Do you want to purchase it for $10?",
     image: "Ice-Cream.png",
-    cost: -6,
+    cost: -10,
     active: true,
     accepted: false,
     recurring: false,
@@ -284,9 +284,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "You would like to attend a musical coming to town, but it costs $15 do you want to spend the money?",
+      "You would like to attend a musical coming to town, but it costs $20 do you want to spend the money?",
     image: "Convention.png",
-    cost: -15,
+    cost: -20,
     active: true,
     accepted: false,
     recurring: false,
@@ -294,9 +294,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "You would like to sell a physical copy of an unplayed video game for $20. Would you like to do this?",
+      "You would like to sell a physical copy of an unplayed video game for $14. Would you like to do this?",
     image: "Video-Games.png",
-    cost: 20,
+    cost: 14,
     active: true,
     accepted: false,
     recurring: false,
@@ -304,9 +304,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "Grandma/Grandpa came over and was feeling generous. Thanks for the $25!!",
+      "Grandma came over and was feeling generous. Thanks for the $15!!",
     image: "Grandparents.png",
-    cost: 25,
+    cost: 15,
     active: false,
     accepted: false,
     recurring: false,
@@ -314,29 +314,9 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "Your school is hosting a field trip, and it will cost you $10. Would you like to attend?",
+      "Your school is hosting a field trip, and it will cost you $25. Would you like to attend?",
     image: "School-Bus.png",
-    cost: -10,
-    active: true,
-    accepted: false,
-    recurring: false,
-    info: financeInfo[0],
-  },
-  {
-    description:
-      "You want an instructor to teach you how to play an instrument. Will you pay $10 for weekly lessons?",
-    image: "Cat-Playing-Guitar.png",
-    cost: -20,
-    active: true,
-    accepted: false,
-    recurring: true,
-    info: financeInfo[4],
-  },
-  {
-    description:
-      "You would like to attend a summer outdoor camping in the future for $20. Would you like to go?",
-    image: "Camping-Tent.png",
-    cost: -20,
+    cost: -25,
     active: true,
     accepted: false,
     recurring: false,
@@ -344,9 +324,29 @@ var events: GameEvent[] = [
   },
   {
     description:
-      "You would like to go to the zoo that costs $10 for a ticket. Would you like to pay?",
-    image: "Zoo.png",
+      "You want an instructor to teach you how to play an instrument. Do you want to sign up for weekly lessons for $10 a week?  (Keep in mind this will charge you $10 every 7 days)",
+    image: "Cat-Playing-Guitar.png",
     cost: -10,
+    active: true,
+    accepted: false,
+    recurring: true,
+    info: financeInfo[4],
+  },
+  {
+    description:
+      "You would like to attend a summer outdoor camping in the future for $40. Would you like to go?",
+    image: "Camping-Tent.png",
+    cost: -40,
+    active: true,
+    accepted: false,
+    recurring: false,
+    info: financeInfo[3],
+  },
+  {
+    description:
+      "You would like to go to the zoo that costs $20 for a ticket. Would you like to pay?",
+    image: "Zoo.png",
+    cost: -20,
     active: true,
     accepted: false,
     recurring: false,
