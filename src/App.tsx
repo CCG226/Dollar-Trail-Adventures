@@ -19,7 +19,7 @@ function App() {
   const [hideCounter, setHideCounter] = useState(true);
   const [hideSummary, setHideSummary] = useState(true);
   const [hideHome, setHideHome] = useState(false);
-  const [dayCounter, setDayCounter] = useState(1);
+  const [dayCounter, setDayCounter] = useState(0);
 
   const [curEvent, setCurEvent] = useState<GameEvent | null>(null);
 
@@ -80,7 +80,7 @@ function App() {
     changeTurn();
   };
   const endGame = () => {
-    setDayCounter(1);
+    setDayCounter(0);
     setHideHome(true);
     let playerJSON: string | null = localStorage.getItem("player");
 
