@@ -53,7 +53,7 @@ function App() {
   const initializePlayer = () => {
     let player: Player = {
       win: false,
-      balance: 0,
+      balance: 50,
       completedEvents: [],
       recurringCharges: 0,
       day: dayCounter,

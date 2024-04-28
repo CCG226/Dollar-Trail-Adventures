@@ -78,6 +78,9 @@ export default function Summary() {
           </div>
         )}
         <h6>You Final Balance Was ${balance}</h6>
+        {balance < 0 && (
+          <h6>Oh No! You Over Spent! You Will Now Be Charged Overdraft fees</h6>
+        )}
       </div>
       <br />
       <div className="window">
@@ -109,15 +112,14 @@ export default function Summary() {
               {selectedTab ? (
                 <div className="summary">
                   <h2>{selectedTab.label} Event Summary</h2>
-                  <div className="content">
-                    {curWeekValues && curWeekValues.length > 0 && (
-                      <div className="content">
-                        {curWeekValues.map((value, index) => (
-                          <div key={index}>{value}</div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
+
+                  {curWeekValues && curWeekValues.length > 0 && (
+                    <div className="content">
+                      {curWeekValues.map((value, index) => (
+                        <div key={index}>{value}</div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ) : (
                 "error"

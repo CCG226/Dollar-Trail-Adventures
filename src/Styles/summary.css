@@ -1,5 +1,4 @@
 body {
-
   --accent: #8855ff;
   width: 100vw;
   height: 100vh;
@@ -144,6 +143,6 @@ li button {
   pointer-events: none;
 }
 
-.summarytext {
+.content {
   font-size: 20px;
 }
