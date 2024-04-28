@@ -116,7 +116,10 @@ export default function Summary() {
                   {curWeekValues && curWeekValues.length > 0 && (
                     <div className="content">
                       {curWeekValues.map((value, index) => (
-                        <div key={index}>{value}</div>
+                        <div className="divv" key={index}>
+                          {value}
+                          <hr />
+                        </div>
                       ))}
                     </div>
                   )}

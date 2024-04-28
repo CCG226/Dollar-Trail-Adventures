@@ -53,13 +53,17 @@ function Home(props: HomeProps) {
   const balance = curPlayer ? curPlayer.balance : 0;
   const subCost = curPlayer ? curPlayer.subCost : 0;
   const invCost = curPlayer ? curPlayer.invCost : 0;
-  const infoElement = curPlayer ? curPlayer.completedEvents[curPlayer.completedEvents.length - 1].info : 0;
+  const infoElement = curPlayer
+    ? curPlayer.completedEvents[curPlayer.completedEvents.length - 1].info
+    : 0;
   return (
     <div className="homepage">
+      <h2 style={{ color: "white" }} className="title">
+        {" "}
+        Finance Tips:{" "}
+      </h2>
 
-      <h2 className="title"> Finance Tips: </h2>
-
-      <p> { infoElement } </p>
+      <p className="infoo"> {infoElement} </p>
 
       <div className="btn-container">
         <Button onClick={props.changeTurn}>Continue</Button>
