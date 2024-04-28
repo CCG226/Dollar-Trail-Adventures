@@ -3,9 +3,9 @@ import { GameEvent } from "../Interfaces/GameEvent";
 var financeInfo: string[] = [
   "One Concept to keep in mind is Saving.  Saving is setting aside some of your money and making sure you don't spend all that you have. For this game you are trying to end with enough money to afford the new toy when it releases.  It might be a good idea to save some money so that you can afford the toy at the end of the game and win.",
   "It looks like you spent more than you have. Spending too much money can result in debt which means that you owe someone else money that you don't currently have.  It's a good idea to make sure you never go in debt unless absolutely necessary.",
-  "Good choice.  What you just did is known as investing.  Investing is when you put money towards things like stock, CDs, and bonds, that over time will grow in value.  This is a very useful tool if you know that you will not need a portion of your money.  By investing your unneeded money you can slowly gain more money without doing anything except waiting",
-  "You may be wondering why you just spent more money than you though.  This is what is known as sales tax.  Sales tax is an extra cost factored into nearly every purchase you make.  For smaller purchases the tax will be very small, but with larger purchases sales tax can be a lot of money.  It's important to pay attention to how much an item costs and consider how much it will truly cost after taxes.",
-  "One last concept is financial goal setting.  The point of this game was to see if you could make it to 30 days with $50.  This game was an example of a financial goal of having $50 by the end of 30 days.  This is a very useful concept for saving up for big purchases because it gives you a goal to reach for and pay attention to.",
+  "Investing is when you put money towards things like stock, CDs, and bonds, that over time will grow in value.  This is a very useful tool if you know that you will not need a portion of your money.  By investing your unneeded money you can slowly gain more money without doing anything except waiting",
+  "Sales tax is an extra cost factored into nearly every purchase you make.  For smaller purchases the tax will be very small, but with larger purchases sales tax can be a lot of money.  It's important to pay attention to how much an item costs and consider how much it will truly cost after taxes.",
+  "Financial goal setting is when you set a goal of having saved a certain amount of money.  This is a very useful tool as it gives you a guide what is and is not a necessary purchase.  For example, is the purchase of a piece of gum worth it if it will move me away from my goal of buying a toy car?",
   "It looks like you found one of the downsides of owning a debit card.  Debit cards are nice since you don't have to cary cash, but when you lose them you risk others finding it and using your own money.  As such, its important to make sure you never lose your debit card and if you do you freeze it.",
   "While subscriptions can be nice.  They can also be easy to forget about resulting in situations in which you are paying for a service you aren't using.  Becuase of this its important to keep track of what you are paying for at all times.",
   "Selling old things that you no longer use can be a good way to scrape together some money.  However, you oftentimes will have to sell your things for less than you purchased them for meaning it isn't a good idea to constantly be purchasing things and then selling them.",
@@ -161,7 +161,7 @@ var events: GameEvent[] = [
     active: false,
     accepted: false,
     recurring: false,
-    info: financeInfo[0],
+    info: financeInfo[2],
   },
   {
     description:
@@ -171,7 +171,7 @@ var events: GameEvent[] = [
     active: false,
     accepted: false,
     recurring: true,
-    info: financeInfo[8],
+    info: financeInfo[3],
   },
   {
     description:
@@ -191,7 +191,7 @@ var events: GameEvent[] = [
     active: true,
     accepted: false,
     recurring: false,
-    info: financeInfo[8],
+    info: financeInfo[4],
   },
   {
     description:
@@ -220,7 +220,7 @@ var events: GameEvent[] = [
     active: false,
     accepted: true,
     recurring: false,
-    info: financeInfo[0],
+    info: financeInfo[2],
   },
   {
     description:
@@ -240,7 +240,7 @@ var events: GameEvent[] = [
     active: true,
     accepted: false,
     recurring: false,
-    info: financeInfo[0],
+    info: financeInfo[3],
   },
   {
     description:
@@ -280,7 +280,7 @@ var events: GameEvent[] = [
     active: true,
     accepted: false,
     recurring: false,
-    info: financeInfo[8],
+    info: financeInfo[4],
   },
   {
     description:
@@ -310,7 +310,7 @@ var events: GameEvent[] = [
     active: false,
     accepted: false,
     recurring: false,
-    info: financeInfo[0],
+    info: financeInfo[3],
   },
   {
     description:
@@ -330,7 +330,7 @@ var events: GameEvent[] = [
     active: true,
     accepted: false,
     recurring: true,
-    info: financeInfo[0],
+    info: financeInfo[4],
   },
   {
     description:
@@ -340,7 +340,7 @@ var events: GameEvent[] = [
     active: true,
     accepted: false,
     recurring: false,
-    info: financeInfo[0],
+    info: financeInfo[3],
   },
   {
     description:
@@ -350,7 +350,7 @@ var events: GameEvent[] = [
     active: true,
     accepted: false,
     recurring: false,
-    info: financeInfo[0],
+    info: financeInfo[2],
   },
 ];
 
