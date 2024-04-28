@@ -25,11 +25,9 @@ function BeginModal(props: BeginModalProps) {
 
       <Modal.Body className="mBody left">
         <p></p>
-        <ul className="tutorial-list">
-          <li className="tutorial-list-items">- Answer Honestly</li>
-          <li>- You will start with $50</li>
-          <li>- You can check your balance after the event is done, not during</li>
-        </ul>
+        <div>- Answer Honestly</div>
+        <div>- You will start with $50</div>
+        <div>- You can check your balance after the event is done, not during</div>
       </Modal.Body>
       <Modal.Footer className="footer center">
         <Button className="btn" onClick={props.startGame}>

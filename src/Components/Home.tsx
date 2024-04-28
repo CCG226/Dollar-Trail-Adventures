@@ -57,9 +57,9 @@ function Home(props: HomeProps) {
   return (
     <div className="homepage">
 
-      <h2 className="title"> Home </h2>
+      <h2 className="title"> Finance Tips: </h2>
 
-
+      <p> { infoElement } </p>
 
       <div className="btn-container">
         <Button onClick={props.changeTurn}>Continue</Button>
