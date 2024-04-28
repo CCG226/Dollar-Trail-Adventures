@@ -1,10 +1,9 @@
 * {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
 }
 
 .modal-content {
   border: 1px solid black;
-  
 }
 
 .center {
@@ -33,6 +32,7 @@
   background-color: #233142;
   border-bottom: none;
 }
+
 .footer {
   background-color: #233142;
   border-top: none;
@@ -82,10 +82,14 @@ h1 {
 /* Faruq css */
 
 .homepage {
-  margin-top: 200px;
-  background-color: rgb(28, 252, 236);
+  margin-top: 100px;
+  background-color: #233142;
   border-radius: 20px;
-  border: 3px solid black;
+  color: white;
+  border: 3px solid wheat;
+  width: 1000px;
+  font-size: 19px;
+  padding: 5%;
 }
 
 .btn-container {
@@ -96,7 +100,7 @@ h1 {
   margin-top: 10px;
 }
 
-.btn-container button{
+.btn-container button {
   margin-right: 10px;
   border-radius: 40px;
   margin-bottom: 10px;
@@ -118,7 +122,7 @@ h1 {
 }
 
 .title {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   font-size: 36px;
   color: black;
   font-weight: bold;
@@ -137,10 +141,10 @@ li {
 }
 
 .carousel-container {
-padding:300px;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
-width: 100%;
+  padding: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
