@@ -146,6 +146,15 @@ li button {
 .content {
   font-size: 20px;
 }
-.divv {
+
+.red {
+  background-color: rgba(255, 0, 0, 0.6);
+  margin-bottom: 1%;
+}
+.green {
+  background-color: rgba(55, 255, 0, 0.6);
+  margin-bottom: 1%;
+}
+.null {
   margin-bottom: 1%;
 }

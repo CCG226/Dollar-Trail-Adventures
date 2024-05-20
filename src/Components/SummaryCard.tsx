@@ -3,11 +3,14 @@ import { initialTabs as tabs } from "./ingredients";
 import { motion, AnimatePresence } from "framer-motion";
 import "../Styles/summary.css";
 import { Player } from "../Interfaces/Player";
-
+interface output {
+  name: string;
+  classN: string;
+}
 export default function Summary() {
   const [selectedTab, setSelectedTab] = useState<any>(tabs[0]);
-  const [curWeekValues, setCurWeekValues] = useState<string[]>();
-
+  const [curWeekValues, setCurWeekValues] = useState<output[]>();
+  const [actionClass, setActionClass] = useState<string[]>();
   const [curPlayer, setCurPlayer] = useState<Player | null>(null);
 
   const loadPlayerData = () => {
@@ -23,7 +26,8 @@ export default function Summary() {
     console.log(item.label);
 
     var num: number = parseInt(item.label[item.label.length - 1]);
-    var temp: string[] = [];
+    var temp: output[] = [];
+
     let playerJSON: string | null = localStorage.getItem("player");
     console.log(playerJSON);
     if (playerJSON) {
@@ -31,26 +35,73 @@ export default function Summary() {
 
       if (num == 1) {
         for (var i = 0; i < 7; i++) {
-          temp.push(player!.completedEvents[i].description);
+          var out: output = { classN: "", name: "" };
+          if (player!.completedEvents[i].active == true) {
+            if (player!.completedEvents[i].accepted == true) {
+              out.classN = "green";
+            } else {
+              out.classN = "red";
+            }
+            out.name = player!.completedEvents[i].description;
+          } else {
+            out.name = "";
+            out.classN = "null";
+          }
+          temp.push(out);
         }
       }
       if (num == 2) {
         for (var i = 7; i < 14; i++) {
-          temp.push(player!.completedEvents[i].description);
+          var out: output = { classN: "", name: "" };
+          if (player!.completedEvents[i].active == true) {
+            if (player!.completedEvents[i].accepted == true) {
+              out.classN = "green";
+            } else {
+              out.classN = "red";
+            }
+            out.name = player!.completedEvents[i].description;
+          } else {
+            out.name = "";
+            out.classN = "null";
+          }
+          temp.push(out);
         }
       }
       if (num == 3) {
         for (var i = 14; i < 21; i++) {
-          temp.push(player!.completedEvents[i].description);
+          var out: output = { classN: "", name: "" };
+          if (player!.completedEvents[i].active == true) {
+            if (player!.completedEvents[i].accepted == true) {
+              out.classN = "green";
+            } else {
+              out.classN = "red";
+            }
+            out.name = player!.completedEvents[i].description;
+          } else {
+            out.name = "";
+            out.classN = "null";
+          }
+          temp.push(out);
         }
       }
       if (num == 4) {
         for (var i = 21; i < 27; i++) {
-          temp.push(player!.completedEvents[i].description);
+          var out: output = { classN: "", name: "" };
+          if (player!.completedEvents[i].active == true) {
+            if (player!.completedEvents[i].accepted == true) {
+              out.classN = "green";
+            } else {
+              out.classN = "red";
+            }
+            out.name = player!.completedEvents[i].description;
+          } else {
+            out.name = "";
+            out.classN = "null";
+          }
+          temp.push(out);
         }
       }
     }
-
     setCurWeekValues(temp);
   };
 
@@ -116,9 +167,8 @@ export default function Summary() {
                   {curWeekValues && curWeekValues.length > 0 && (
                     <div className="content">
                       {curWeekValues.map((value, index) => (
-                        <div className="divv" key={index}>
-                          {value}
-                          <hr />
+                        <div className={value.classN} key={index}>
+                          {value.name}
                         </div>
                       ))}
                     </div>
